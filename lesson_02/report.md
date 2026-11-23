@@ -1,18 +1,14 @@
 # Отчёт по теме 2. Проект, задача и результат
 
-Замените пять заглушек в полях ниже своими полными ссылками `https://...`.
-Скриншоты загрузите в `screenshots/` с указанными ниже именами.
-Ссылки на снимки уже готовы — не удаляйте их.
+Репозиторий: https://github.com/qxrexweisee/project-management
 
-Репозиторий: [[ССЫЛКА_НА_СВОЙ_РЕПОЗИТОРИЙ]]
+Проект: https://b24-uuekxe.bitrix24.ru/online/?IM_COLLAB=chat7
 
-Проект: [[ССЫЛКА_НА_СВОЙ_ПРОЕКТ_БИТРИКС24]]
+Задача 1: https://b24-uuekxe.bitrix24.ru/company/personal/user/1/tasks/task/view/1/
 
-Задача 1: [[ССЫЛКА_НА_ЗАДАЧУ_О_ПРАВИЛАХ]]
+Задача 2: https://b24-uuekxe.bitrix24.ru/company/personal/user/1/tasks/task/view/3/
 
-Задача 2: [[ССЫЛКА_НА_ЗАДАЧУ_О_КАРТОЧКЕ]]
-
-Задача 3: [[ССЫЛКА_НА_ЗАДАЧУ_О_ПРОВЕРКАХ]]
+Задача 3: https://b24-uuekxe.bitrix24.ru/company/personal/user/1/tasks/task/view/5/
 
 ## Скриншоты
 
