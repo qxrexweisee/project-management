@@ -1,24 +1,22 @@
 # Отчёт. От требований к плану работ
 
-Замените `[[...]]` своими ссылками. Снимки загрузите в `screenshots/`.
+Репозиторий: https://github.com/qxrexweisee/project-management
 
-Репозиторий: [[ССЫЛКА_НА_СВОЙ_РЕПОЗИТОРИЙ]]
+Проект: https://b24-uuekxe.bitrix24.ru/workgroups/group/1/
 
-Проект: [[ССЫЛКА_НА_СВОЙ_ПРОЕКТ]]
+Источник требований: https://b24-uuekxe.bitrix24.ru/company/personal/user/1/tasks/task/view/5/
 
-Источник требований: [[ССЫЛКА_НА_ЗАДАЧУ_ТЕМЫ_3]]
+Общая задача: https://b24-uuekxe.bitrix24.ru/workgroups/group/1/tasks/task/view/7/
 
-Общая задача: [[ССЫЛКА_НА_ОБЩУЮ_ЗАДАЧУ]]
+А1: https://b24-uuekxe.bitrix24.ru/company/personal/user/1/tasks/task/view/9/
 
-А1: [[ССЫЛКА_НА_А1]]
+А2: https://b24-uuekxe.bitrix24.ru/company/personal/user/1/tasks/task/view/11/
 
-А2: [[ССЫЛКА_НА_А2]]
+Б: https://b24-uuekxe.bitrix24.ru/workgroups/group/1/tasks/task/view/13/
 
-Б: [[ССЫЛКА_НА_Б]]
+В: https://b24-uuekxe.bitrix24.ru/workgroups/group/1/tasks/task/view/15/
 
-В: [[ССЫЛКА_НА_В]]
-
-Г: [[ССЫЛКА_НА_Г]]
+Г: https://b24-uuekxe.bitrix24.ru/workgroups/group/1/tasks/task/view/17/
 
 ## Скриншоты
 
