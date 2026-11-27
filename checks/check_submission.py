@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Проверяет комплектность отчёта по урокам 02 и 03."""
+"""Проверяет комплектность отчёта по урокам 02–07."""
 
 from __future__ import annotations
 
@@ -26,7 +26,7 @@ class LessonRequirements:
 
 MAX_IMAGE_SIZE = 10 * 1024 * 1024
 MIN_WIDTH = 640
-MIN_HEIGHT = 360
+MIN_HEIGHT = 200
 MAX_DIMENSION = 12_000
 PNG_SIGNATURE = b"\x89PNG\r\n\x1a\n"
 PLACEHOLDER_PARTS = frozenset(
@@ -77,6 +77,114 @@ def lesson_requirements(lesson: str) -> LessonRequirements:
                 "08-summary.png",
             ),
             report_fields=("Репозиторий", "Проект", "Задача"),
+        )
+    if lesson == "04":
+        return LessonRequirements(
+            report_path=Path("lesson_04/report.md"),
+            screenshots_dir=Path("lesson_04/screenshots"),
+            screenshot_names=(
+                "01-parent.png",
+                "02-create-reservation.png",
+                "03-reservation-state.png",
+                "04-customer-message.png",
+                "05-test-data.png",
+                "06-integration-check.png",
+                "07-work-order.png",
+                "08-project-plan.png",
+            ),
+            report_fields=(
+                "Репозиторий",
+                "Проект",
+                "Источник требований",
+                "Общая задача",
+                "А1",
+                "А2",
+                "Б",
+                "В",
+                "Г",
+            ),
+        )
+    if lesson == "05":
+        return LessonRequirements(
+            report_path=Path("lesson_05/report.md"),
+            screenshots_dir=Path("lesson_05/screenshots"),
+            screenshot_names=(
+                "01-crm-client.png",
+                "02-crm-request.png",
+                "03-request-clarification.png",
+                "04-launch-task.png",
+                "05-launch-roles-message.png",
+                "06-project-kanban.png",
+                "07-calendar-gantt.png",
+                "08-launch-brief.png",
+                "09-crm-channel.png",
+                "10-automation-process-bi.png",
+            ),
+            report_fields=(
+                "Репозиторий",
+                "Проект",
+                "CRM-клиент",
+                "CRM-запрос",
+                "Источник требований",
+                "Общая задача",
+                "Задача запуска",
+                "Бриф запуска",
+            ),
+        )
+    if lesson == "06":
+        return LessonRequirements(
+            report_path=Path("lesson_06/report.md"),
+            screenshots_dir=Path("lesson_06/screenshots"),
+            screenshot_names=(
+                "01-task-v.png",
+                "02-roles.png",
+                "03-kanban-v.png",
+                "04-calendar.png",
+                "05-gantt-plan.png",
+                "06-brief.png",
+                "07-brief-link-task-v.png",
+                "08-question-decision.png",
+                "09-traceability.png",
+            ),
+            report_fields=(
+                "Репозиторий",
+                "Проект",
+                "Источник требований",
+                "Задача В",
+                "Задача Г",
+                "Бриф",
+                "Канбан",
+                "Календарь",
+                "Гант или план",
+                "Обсуждение задачи В",
+            ),
+        )
+    if lesson == "07":
+        return LessonRequirements(
+            report_path=Path("lesson_07/report.md"),
+            screenshots_dir=Path("lesson_07/screenshots"),
+            screenshot_names=(
+                "01-task-g-context.png",
+                "02-route-roles.png",
+                "03-automation-section.png",
+                "04-transfer-rule.png",
+                "05-return-rule.png",
+                "06-control-point.png",
+                "07-comment-or-scenario.png",
+                "08-traceability.png",
+            ),
+            report_fields=(
+                "Репозиторий",
+                "Проект",
+                "Источник требований",
+                "Задача В",
+                "Задача Г",
+                "Бриф",
+                "Автоматизация или ограничение",
+                "Замечание или сценарий",
+                "Контрольная точка",
+                "Решение или передача на доработку",
+            ),
         )
     raise ValueError(f"Неизвестный урок: {lesson}")
 
@@ -303,7 +411,7 @@ def main() -> int:
     )
     parser.add_argument(
         "--lesson",
-        choices=("02", "03"),
+        choices=("02", "03", "04", "05", "06", "07"),
         default="02",
         help="номер проверяемого урока (по умолчанию: 02)",
     )
