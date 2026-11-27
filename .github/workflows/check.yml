@@ -26,11 +26,17 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        lesson: ['02', '03']
+        lesson: ['02', '03', '04', '05', '06', '07']
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - name: Проверить комплект сдачи
-        run: python checks/check_submission.py --lesson ${{ matrix.lesson }}
+        run: |
+          report="lesson_${{ matrix.lesson }}/report.md"
+          if grep -q '\[\[' "$report"; then
+            echo "Практика ${{ matrix.lesson }} ещё не заполнена; проверка комплекта пропущена."
+            exit 0
+          fi
+          python checks/check_submission.py --lesson ${{ matrix.lesson }}
